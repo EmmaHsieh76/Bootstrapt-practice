@@ -19,9 +19,24 @@
       margin: auto;
     }
 
+    .flex-g {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     @media (min-width:992px) {
       #section1 {
         height: 100vh;
+      }
+
+      #section2,
+      #section3 {
+        .flex-g {
+          height: 100vh;
+        }
+
       }
     }
   </style>
@@ -69,15 +84,15 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner overflow-hidden">
       <div class="carousel-item active">
-        <img src="https://picsum.photos/1920/1080/?random=1" class="d-block w-100 vh-carousel ">
+        <img src="https://picsum.photos/1920/1080/?random=1" class="d-block w-100 vh-carousel object-fit-cover">
       </div>
       <div class="carousel-item">
-        <img src="https://picsum.photos/1920/1080/?random=2" class="d-block w-100 vh-carousel">
+        <img src="https://picsum.photos/1920/1080/?random=2" class="d-block w-100 vh-carousel object-fit-cover">
       </div>
       <div class="carousel-item">
-        <img src="https://picsum.photos/1920/1080/?random=3" class="d-block w-100 vh-carousel">
+        <img src="https://picsum.photos/1920/1080/?random=3" class="d-block w-100 vh-carousel object-fit-cover">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -116,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="col-auto  col-lg-4 pt-4 pt-lg-0">
+        <div class="col-auto  col-lg-4 py-4 py-lg-0">
           <div class="card ">
             <img src="https://picsum.photos/300/200/?random=6" class="d-block">
             <div class="card-body">
@@ -130,35 +145,121 @@
     </div>
   </div>
 
-  <!--2張卡-1  -->
-  <div class="section02 bg-primary w-100">
 
-    <div class="row g-0 vh-100">
-      <div class="col-6">
-        <img src="https://picsum.photos/1920/1080/?random=10 " class="w-100 h-100">
-      </div>
-      <div class="col-6">
-        <div class="card  text-center h-100">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic facilis impedit
-              similique, reprehenderit veniam aperiam illo quo quia unde esse inventore laudantium molestiae maxime.
-              Cupiditate, dicta. Aut itaque quaerat doloremque totam obcaecati ab repellat necessitatibus aspernatur sed
-              atque odit modi, magni asperiores maxime excepturi alias fugit voluptatem, consequatur quam corporis.
-
+  <!-- 2張卡-1  -->
+  <div id="section2">
+    <div class="container-fluid">
+      <div class="row vh-100 ">
+        <div class="col-lg-6 col-sm-12 p-0 overflow-hidden">
+          <img src="https://picsum.photos/1920/1080/?random=1" class="h-100 w-100 object-fit-cover">
+        </div>
+        <div class="col-lg-6 col-sm-12 p-0 px-5">
+          <div class=" py-5  flex-g h-100">
+            <div class="h1">Coffee Shop</div>
+            <p class="h3 mt-5">
+              引發蔬菜它的輸出他在美麗物品數碼相機模樣衡突暂無,便宜白色統計某種均為合理桃園,益基地臺灣和他小心構成所講更是自主一般政治咱們
+              有限责任確保之一在那裡經商加人组成·很容易大約農業立場貸款阪權委托青年娛樂本網可以用就好動力,榮爱回事他對速度,傷心點擊數。
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-success ">VIEW COLLECTION</a>
           </div>
-
         </div>
       </div>
     </div>
+  </div>
+  <!-- 2張卡-2  -->
+  <div id="section3">
+    <div class="container-fluid">
+      <div class="row vh-100 ">
+        <div class="col-lg-6 col-sm-12 p-0 overflow-hidden order-lg-2 ">
+          <img src="https://picsum.photos/1920/1080/?random=2" class="h-100 w-100 object-fit-cover">
+        </div>
+        <div class="col-lg-6 col-sm-12 p-0 px-5">
+          <div class=" py-5  flex-g h-100 order-lg-1 ">
+            <div class="h1">Coffee Shop</div>
+            <p class="h3 mt-5">
+              引發蔬菜它的輸出他在美麗物品數碼相機模樣衡突暂無,便宜白色統計某種均為合理桃園,益基地臺灣和他小心構成所講更是自主一般政治咱們
+              有限责任確保之一在那裡經商加人组成·很容易大約農業立場貸款阪權委托青年娛樂本網可以用就好動力,榮爱回事他對速度,傷心點擊數。
+            </p>
+            <a href="#" class="btn btn-success mt-5">VIEW COLLECTION</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- map -->
+  <div id="section4">
+    <iframe class="vh-100 "
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14458.814638996064!2d121.40923724452561!3d25.044128946426877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1701690343375!5m2!1szh-TW!2stw"
+      width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 
 
 
+    <!-- 聯繫我們 -->
+  <div id="section05" class="mt-5 ">
+        <div class="container text-center mt-3">
+          <h1 class="h1 mb-3">聯繫我們</h1>
+          <h2 class="h2">泰山咖啡莊園，傳承熱情coding精神</h2>
+          <p class="h5 pb-5" style="font-size: ;">任何服務問題或建議，歡迎您透過克服表單告知我們，謝謝!</p>
+        </div>
+      </div>
 
+  <!-- 表單 -->
+  <div id="section06">
+        <div class="container">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">姓名</label>
+              <div class="input-group">
+                <input type="text" class="form-control">
+                <div class="input-group-text">
+                  <span class="px-2">先生</span>
+                  <input class="form-check-input mt-0" type="radio" value="">
+                  <span class="px-2">女士</span>
+                  <input class="form-check-input mt-0" type="radio" value="" id="inputEmail4">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">電話</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">電子信箱</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-6">
+              <label for="inputState" class="form-label">問題類型</label>
+              <select id="inputState" class="form-select">
+                <option selected>餐飲建議</option>
+                <option>不要便當</option>
+              </select>
+            </div>
 
-    <script src="./js/bootstrap.bundle.js"></script>
+            <div class="col-md-12">
+              <label for="mess" class="form-label">意見需求</label>
+              <textarea class="form-control" id="mess" rows="5"></textarea>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  訂閱泰山莊園最新資訊
+                </label>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <button type="submit" class="btn btn-secondary">送出</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+<!--  -->
+  <script src="./js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
