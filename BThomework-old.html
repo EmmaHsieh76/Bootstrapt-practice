@@ -7,6 +7,10 @@
   <title>BThomework</title>
   <link rel="stylesheet" href="./css/bootstrap.css">
   <style>
+    body {
+      background-color: var(--bs-light);
+    }
+
     .navbar-collapse {
       flex-grow: 0;
     }
@@ -26,7 +30,29 @@
       justify-content: center;
     }
 
+
+
+    #footer {
+      color: #fff;
+      background: #000;
+    }
+
+
+    #footer img {
+      border-radius: 50%;
+    }
+
+    #footer p {
+      margin: 0;
+      padding: 0;
+    }
+
     @media (min-width:992px) {
+      .navbar {
+        opacity: 0.8;
+      }
+
+      #carouselExampleIndicators img,
       #section1 {
         height: 100vh;
       }
@@ -36,15 +62,22 @@
         .flex-g {
           height: 100vh;
         }
-
       }
+
+      #footer .row .col:first-child {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
     }
   </style>
 </head>
 
 <body>
   <!-- 導覽列 -->
-  <nav class="navbar navbar-expand-lg navbar-dark opacity-50 bg-dark justify-content-between  fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between  fixed-top ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#emma">
@@ -74,7 +107,7 @@
 
 
   <!-- 輪播圖 -->
-  <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-bs-ride="carousel"
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade mt-lg-0" data-bs-ride="carousel"
     style="margin-top: 56px;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -153,14 +186,14 @@
         <div class="col-lg-6 col-sm-12 p-0 overflow-hidden">
           <img src="https://picsum.photos/1920/1080/?random=1" class="h-100 w-100 object-fit-cover">
         </div>
-        <div class="col-lg-6 col-sm-12 p-0 px-5">
-          <div class=" py-5  flex-g h-100">
+        <div class="col-lg-6 col-sm-12 ">
+          <div class=" py-lg-1  flex-g h-100">
             <div class="h1">Coffee Shop</div>
-            <p class="h3 mt-5">
+            <p class="h3 px-5 m-0">
               引發蔬菜它的輸出他在美麗物品數碼相機模樣衡突暂無,便宜白色統計某種均為合理桃園,益基地臺灣和他小心構成所講更是自主一般政治咱們
               有限责任確保之一在那裡經商加人组成·很容易大約農業立場貸款阪權委托青年娛樂本網可以用就好動力,榮爱回事他對速度,傷心點擊數。
             </p>
-            <a href="#" class="btn btn-success ">VIEW COLLECTION</a>
+            <a href="#" class="btn btn-success btn-lg ">VIEW COLLECTION</a>
           </div>
         </div>
       </div>
@@ -173,14 +206,14 @@
         <div class="col-lg-6 col-sm-12 p-0 overflow-hidden order-lg-2 ">
           <img src="https://picsum.photos/1920/1080/?random=2" class="h-100 w-100 object-fit-cover">
         </div>
-        <div class="col-lg-6 col-sm-12 p-0 px-5">
-          <div class=" py-5  flex-g h-100 order-lg-1 ">
+        <div class="col-lg-6 col-sm-12 py-5">
+          <div class=" py-lg-1  flex-g h-100 order-lg-1 ">
             <div class="h1">Coffee Shop</div>
-            <p class="h3 mt-5">
+            <p class="h3 px-5 m-0">
               引發蔬菜它的輸出他在美麗物品數碼相機模樣衡突暂無,便宜白色統計某種均為合理桃園,益基地臺灣和他小心構成所講更是自主一般政治咱們
               有限责任確保之一在那裡經商加人组成·很容易大約農業立場貸款阪權委托青年娛樂本網可以用就好動力,榮爱回事他對速度,傷心點擊數。
             </p>
-            <a href="#" class="btn btn-success mt-5">VIEW COLLECTION</a>
+            <a href="#" class="btn btn-success btn-lg">VIEW COLLECTION</a>
           </div>
         </div>
       </div>
@@ -197,68 +230,109 @@
 
 
 
-    <!-- 聯繫我們 -->
+  <!-- 聯繫我們 -->
   <div id="section05" class="mt-5 ">
-        <div class="container text-center mt-3">
-          <h1 class="h1 mb-3">聯繫我們</h1>
-          <h2 class="h2">泰山咖啡莊園，傳承熱情coding精神</h2>
-          <p class="h5 pb-5" style="font-size: ;">任何服務問題或建議，歡迎您透過克服表單告知我們，謝謝!</p>
-        </div>
-      </div>
+    <div class="container text-center mt-3">
+      <h1 class="h1 mb-3">聯繫我們</h1>
+      <h2 class="h2">泰山咖啡莊園，傳承熱情coding精神</h2>
+      <p class="h5 pb-5" style="font-size: ;">任何服務問題或建議，歡迎您透過克服表單告知我們，謝謝!</p>
+    </div>
+  </div>
 
   <!-- 表單 -->
   <div id="section06">
-        <div class="container">
-          <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">姓名</label>
-              <div class="input-group">
-                <input type="text" class="form-control">
-                <div class="input-group-text">
-                  <span class="px-2">先生</span>
-                  <input class="form-check-input mt-0" type="radio" value="">
-                  <span class="px-2">女士</span>
-                  <input class="form-check-input mt-0" type="radio" value="" id="inputEmail4">
-                </div>
-              </div>
+    <div class="container">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">姓名</label>
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <div class="input-group-text">
+              <span class="px-2">先生</span>
+              <input class="form-check-input mt-0" type="radio" value="">
+              <span class="px-2">女士</span>
+              <input class="form-check-input mt-0" type="radio" value="" id="inputEmail4">
             </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">電話</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">電子信箱</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-6">
-              <label for="inputState" class="form-label">問題類型</label>
-              <select id="inputState" class="form-select">
-                <option selected>餐飲建議</option>
-                <option>不要便當</option>
-              </select>
-            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">電話</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">電子信箱</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-6">
+          <label for="inputState" class="form-label">問題類型</label>
+          <select id="inputState" class="form-select">
+            <option selected>餐飲建議</option>
+            <option>不要便當</option>
+          </select>
+        </div>
 
-            <div class="col-md-12">
-              <label for="mess" class="form-label">意見需求</label>
-              <textarea class="form-control" id="mess" rows="5"></textarea>
-            </div>
+        <div class="col-md-12">
+          <label for="mess" class="form-label">意見需求</label>
+          <textarea class="form-control" id="mess" rows="5"></textarea>
+        </div>
 
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  訂閱泰山莊園最新資訊
-                </label>
-              </div>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <button type="submit" class="btn btn-secondary">送出</button>
-            </div>
-          </form>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              訂閱泰山莊園最新資訊
+            </label>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <button type="submit" class="btn btn-secondary">送出</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <div id="footer" class="mt-3 ">
+    <div class="container-fluid px-0 ">
+      <div class="row mx-0">
+        <div class="col-6 col-md-4  text-md-center ">
+          <img src="https://picsum.photos/150/150/?random=7" class="mt-5">
+        </div>
+        <div class="col-6 col-md-2  mt-5">
+          <h5>Address</h5>
+          <p>1234 Street Name</p>
+          <p>City, AA 99999</p>
+        </div>
+        <div class="col-6 col-md-2  mt-lg-5">
+          <h5>Links</h5>
+          <p>Website builder</p>
+          <p>Download for Windows</p>
+          <p>Download for Mac</p>
+        </div>
+        <div class="col-6 col-md-4  mt-lg-5">
+          <h5>Contacts</h5>
+          <p>Email: support@mobirise.com</p>
+          <p>Phone: +1 (0) 000 0000 001</p>
+          <p>Fax:+1 (0) 000 0000 002</p>
+        </div>
+        <div class="col-12  text-center mb-5 mt-4">
+          <p class="small"> &copy;Copyright 2021 KaiFu Change - All Rights Reserved</p>
         </div>
       </div>
+    </div>
+  </div>
 
-<!--  -->
+
+
+
+
+
+
+
+
+
+
+
   <script src="./js/bootstrap.bundle.js"></script>
 </body>
 
